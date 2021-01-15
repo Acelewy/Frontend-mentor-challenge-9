@@ -65,3 +65,60 @@ body {
 .calculator {
     border-top: 5px solid hsl(212, 86%, 64%);
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .topic {
+        max-width: 540px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    .second {
+        font-size: 25px;
+    }
+    .third {
+        margin-top: 14px;
+        margin-bottom: 16px;
+    }
+    .card-grid {
+        margin: auto;
+        display: grid;
+        width: 80vw;
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, 90px);
+    }
+    .card {
+        margin-bottom: 0;
+    }
+    .supervisor {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .team-builder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .karma {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .calculator {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}
